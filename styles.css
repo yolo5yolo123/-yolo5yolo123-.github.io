@@ -4,7 +4,7 @@
 
 header {    
     background-color:  #ffffff;
-    color: rgb(241, 255, 47);
+    color: rgba(0, 81, 255, 0.685);
     text-align: left;
     padding: 20px;
 }
@@ -14,24 +14,24 @@ nav {
     flex-wrap: wrap;
     justify-content: left;
     align-items: left;
-    background-color: #e5ff00;
+    background-color: rgba(0, 81, 255, 0.685);
 }
 
 nav a {
     flex: 1;
-    color: rgb(251, 255, 0);
+    color: rgba(0, 81, 255, 0.685);
     text-align: left;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 nav a:hover {
-    background-color: #eeff00;
-    color: black;
+    background-color: rgba;
+    color: rgba(0, 81, 255, 0.685);
 }
 
 section {
-    background-color: #fbff00;
+    background-color: rgba(0, 81, 255, 0.685);
     padding: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -64,11 +64,11 @@ section {
 }
 
 .banaan a:hover {
-    color: #eeff00;
+    color: rgba(0, 81, 255, 0.685);
 }
 
 .interest a:hover {
-    color: #fbff00;
+    color: rgba(0, 81, 255, 0.685);
 }
 
 .gallery-image {
