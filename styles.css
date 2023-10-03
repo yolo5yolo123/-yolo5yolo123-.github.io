@@ -1,24 +1,122 @@
-/* Stijl het navigatiemenu */
+.menu {
+    display: inline-block;
+}
+
+header {    
+    background-color:  #c28943;
+    color: rgb(52, 48, 40);
+    text-align: left;
+    padding: 20px;
+}
+
 nav {
- background-color: #light blue; /* Achtergrondkleur */
- padding: 10px; /* Ruimte rondom het menu */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: left;
+    background-color: #651111;
 }
-/* Stijl de lijst in het menu */
-ul {
- list-style-type: none; /* Verwijder de standaard lijststijl */
- padding: 0;
+
+nav a {
+    flex: 1;
+    color: rgb(228, 220, 170);
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
 }
-/* Stijl de menu-items (lijstitems) */
-li {
- display: inline; /* Plaats de menu-items naast elkaar */
- margin-right: 20px; /* Ruimte tussen de menu-items */
+
+nav a:hover {
+    background-color: #b28b17;
+    color: black;
 }
-/* Stijl de koppelingen (hyperlinks) in het menu */
-a {
- text-decoration: none; /* Verwijder de onderstreping van koppelingen */
- color: #fff; /* Tekstkleur van koppelingen */
+
+section {
+    background-color: #f5e7cd;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-/* Stijl de koppelingen wanneer de muis erover beweegt */
-a:hover {
- text-decoration: underline; /* Voeg een onderstreping toe bij hover */
+
+.interest {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.interest img {
+    margin: 10px;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.interest a {
+    display: block;
+    text-align: center;
+    margin: 10px;
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+}
+
+.banaan a {
+    color: #333;
+}
+
+.banaan a:hover {
+    color: #c6750c;
+}
+
+.interest a:hover {
+    color: #c6750c;
+}
+
+.gallery-image {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    animation: rotate 10s infinite linear;
+}
+
+.gallery-image-1 {
+    animation-delay: 0s;
+}
+
+.gallery-image-2 {
+    animation-delay: 2s;
+}
+
+.gallery-image-3 {
+    animation-delay: 4s;
+}
+
+.gallery-image-4 {
+    animation-delay: 6s;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateY(0deg) translateZ(500px);
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    50% {
+        transform: rotateY(180deg) translateZ(500px);
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotateY(360deg) translateZ(500px);
+        opacity: 0;
+    }
 }
